@@ -18,7 +18,7 @@ The Query class provides a resolver for obtaining data from the database.
 The application uses pymongo as a driver to communicate with the backend database. Database user access management is provided by mongoDB and authenticated with a URI used to connect with a mongoDB deployment.
 The URI takes the form:
 ` mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][?options]] `
-and is stored as an environment variable. To avoid distributing database access, the environment variable is passed to the docker container at runtime with
+and is stored as an environment variable. The environment variable is passed to the docker container at runtime with
 flag ` -e MONGODB_URL=${MONGODB_URL} `
   
 GraphQL query to update recent_activity in backend database. Implementation for update is in update_scienceUser_status_activity in the Mutation class.
