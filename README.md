@@ -3,7 +3,7 @@
 ## build and run container
 
 ` docker build -t manage-science-users-image . ` <br />
-`docker run -r MONGODB_URL=${MONGODB_URL} -p 8000:8000 manage-science-users-image:latest ` <br />
+`docker run -e MONGODB_URL=${MONGODB_URL} -p 8000:8000 manage-science-users-image:latest ` <br />
 view at: http://localhost:8000/graphql
 
 
